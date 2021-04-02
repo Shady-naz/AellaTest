@@ -19,7 +19,6 @@ try {
             if (char === '.')  
                 dotArr.push(x)
         }
-        console.log(dotArr)
         if (dotArr.length > 0) {
             let k = "";
             let v = ""; 
@@ -59,7 +58,6 @@ try {
                     resultArr.push(objVal[a])
                 }
             }
-            console.log(resultArr)
             let fileContents = fs.createReadStream(filePath);
             fileContents.on('data', (chunk)=> {
                 let data = yaml.load(chunk)
